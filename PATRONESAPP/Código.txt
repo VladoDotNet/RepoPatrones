@@ -1,0 +1,35 @@
+
+//PLantilla MAIN
+
+    static async Task Main(string[] args
+        {
+            Console.WriteLine("-------------------------------------");
+            Console.WriteLine(" PATRONES - xxxx ");
+            Console.WriteLine("-------------------------------------");
+
+            char continuar = default;
+            do
+            {
+                Console.WriteLine("\n");
+                Console.WriteLine("XXXXX ");
+                Console.WriteLine("------------------------");
+
+                Console.Write("Solicitar xxxxx\n" +
+                    "[1] xxxx,\n" +
+                    "[2] xxxx,\n" +
+                    "[3] xxxx : ");
+                var opcion = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine("\n");
+
+
+                Console.Write("Desea continuar? Sí(s) / No(n)");
+                continuar = Console.ReadKey().KeyChar;
+                Console.Clear();
+
+                Console.WriteLine("---------------------------------------");
+                Console.WriteLine(" PATRONES - xxxxx ");
+                Console.WriteLine("---------------------------------------");
+
+            } while (continuar != 'n');
+        }
